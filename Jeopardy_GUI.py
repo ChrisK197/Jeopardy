@@ -8,14 +8,14 @@ class Application (Frame):
 
     def create_widgets(self):
         #Top label
-        Label(self, text="Jeopardy", relief="solid", font=("Comic Sans", 30)).grid(row=0, column=0, columnspan=5, sticky=N)
+        Label(self, text="Jeopardy", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=0, column=0, columnspan=5, sticky=N)
 
         #Category labels
-        Label(self, text="Python", relief="solid", font=("Comic Sans", 30)).grid(row=1, column=0, columnspan=1, sticky=N)
-        Label(self, text="Numbers", relief="solid", font=("Comic Sans", 30)).grid(row=1, column=1, columnspan=1, sticky=N)
-        Label(self, text="Memes", relief="solid", font=("Comic Sans", 30)).grid(row=1, column=2, columnspan=1, sticky=N)
-        Label(self, text="BCA", relief="solid", font=("Comic Sans", 30)).grid(row=1, column=3, columnspan=1, sticky=N)
-        Label(self, text="Miscellaneous", relief="solid", font=("Comic Sans", 30)).grid(row=1, column=4, columnspan=1,sticky=N)
+        Label(self, text="Python", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=1, column=0, columnspan=1, sticky=N)
+        Label(self, text="Numbers", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=1, column=1, columnspan=1, sticky=N)
+        Label(self, text="Memes", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=1, column=2, columnspan=1, sticky=N)
+        Label(self, text=" BCA ", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=1, column=3, columnspan=1, sticky=N)
+        Label(self, text="Miscellaneous", relief="solid", font=("Comic Sans", 30), bg="blue").grid(row=1, column=4, columnspan=1,sticky=N)
 
         # 100 Point row
         cat1_100 = Button(self, text="100", font=("Comic Sans", 30), relief="solid", bg="red") #command
@@ -66,15 +66,15 @@ class Application (Frame):
         cat5_400.grid(row=5, column=4, sticky=N)
 
         # 500 Point row
-        cat1_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
+        cat1_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="purple")  # command
         cat1_500.grid(row=6, column=0, sticky=N)
-        cat2_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
+        cat2_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="purple")  # command
         cat2_500.grid(row=6, column=1, sticky=N)
-        cat3_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
+        cat3_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="purple")  # command
         cat3_500.grid(row=6, column=2, sticky=N)
-        cat4_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
+        cat4_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="purple")  # command
         cat4_500.grid(row=6, column=3, sticky=N)
-        cat5_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
+        cat5_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="purple")  # command
         cat5_500.grid(row=6, column=4, sticky=N)
 
     def question_bttn(self, question):

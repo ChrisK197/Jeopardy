@@ -77,7 +77,10 @@ class Application (Frame):
         cat5_500 = Button(self, text="500", font=("Comic Sans", 30), relief="solid", bg="blue")  # command
         cat5_500.grid(row=6, column=4, sticky=N)
 
-
+    def question_bttn(self, question):
+        Text(self, text=question[0])
+    def answer(self, question):
+        Text(self, text=question[1])
         #self.msg_txt = Text(self, width=50, height=10, wrap=WORD)
         #self.msg_txt.grid(row=3, column=0, columnspan=4)
 
